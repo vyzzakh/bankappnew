@@ -1,0 +1,23 @@
+   
+  <nav class="navbar bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+    
+        MDBC BANK
+      </a>
+    </div>
+
+  </nav>   
+  <div class="text-white ms-5 p-3"><h5>{{aim}}</h5></div>
+  <div class=" row container w-25 bg-transparent pt-5 mt-5 ps-5  rounded  ms-5">
+    <h1 class="pt-5 pb-5">LOG IN</h1>
+   <form (ngSubmit)="login()">
+     
+      <input  type="text" name="uuu" [placeholder]=acursno [(ngModel)]="uplc" class="form-control mb-2  " id="user1">
+      <input type="password" name="wow" placeholder="Password" [(ngModel)]="psw" class="form-control mb-2" id="psws">
+      <button class="btn btn-primary mb-2"  type="submit">Login</button>
+   </form>
+    <div><a routerLink="register">NewUser?</a></div>
+
+</div>   
+
